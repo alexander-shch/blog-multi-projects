@@ -9,6 +9,13 @@ This repo represents different stacks for the same purpose, mainly for practicin
 All of the apps BE and FE will be working working with docker compose (The file is in the root of the project)
 Right now being used mainly to initiate a DB
 
+## Init with docker
+Just run `docker-compose` with required services, for example `docker-compose up ruby react` or `docker-compose up node angular` etc...
+
+No pre-installations are required, the docker files will handle everything for you. copy / install / init / etc...
+
+**DO NOT** run multiple BE and FE services at the same time as they all use the same ports so you will have conflicts
+
 # Server
 
 ## Ruby with rails - WIP

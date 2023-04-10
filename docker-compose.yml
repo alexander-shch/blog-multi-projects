@@ -9,20 +9,19 @@ services:
       - POSTGRES_PASSWORD=postgres
     ports:
       - '5555:5432'
-    volumes: 
+    volumes:
       - db:/var/lib/postgresql/data
-
-  bloggin:
-    depends_on:
-      - db
-    image: bloggin
-    build:
-      context: ./server/ruby
-      dockerfile: Dockerfile
-    ports:
-      - 3000:3000
-    links: 
-      - db
+  # bloggin:
+  #   depends_on:
+  #     - db
+  #   image: bloggin
+  #   build:
+  #     context: ./server/ruby
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - 3000:3000
+  #   links: 
+  #     - db
 
 volumes:
   db:

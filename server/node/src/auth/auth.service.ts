@@ -1,4 +1,8 @@
-import { Injectable, UnauthorizedException } from '@nestjs/common';
+import {
+  HttpException,
+  Injectable,
+  UnauthorizedException,
+} from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 
 import { UsersService } from '../users/users.service';
@@ -10,12 +14,18 @@ export class AuthService {
     private jwtService: JwtService,
   ) {}
 
-  async signIn(username, pass) {
-    const user = await this.usersService.findOne(username);
+  async signIn(email, pass) {
+    if (!email || !pass) {
+      throw new HttpException(
+        'Both email and passwords are required to make an authentication request',
+        400,
+      );
+    }
+    const user = await this.usersService.findOne(email);
     if (user?.password !== pass) {
       throw new UnauthorizedException();
     }
-    const payload = { name: user.name, sub: user.userId };
+    const payload = { name: user.name, id: user.userId };
     return {
       access_token: await this.jwtService.signAsync(payload),
     };

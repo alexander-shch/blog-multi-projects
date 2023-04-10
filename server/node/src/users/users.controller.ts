@@ -10,13 +10,13 @@ export class UsersController {
   constructor(private users: UsersService) {}
 
   @Public()
-  @Get('all')
+  @Get()
   getAllUsers() {
     return this.users.findAll();
   }
 
   @Public()
-  @Post('create')
+  @Post()
   @ApiBody({
     schema: {
       type: 'object',

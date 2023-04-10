@@ -1,4 +1,4 @@
-import { Controller, Get, Request } from '@nestjs/common';
+import { Body, Controller, Get, Post, Request } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
 
 import { PostsService } from './posts.service';
@@ -10,6 +10,11 @@ export class PostsController {
 
   @Get()
   getAllPosts(@Request() req) {
-    this.posts.getAllUserPosts(req.user);
+    return this.posts.getAllUserPosts(req.user);
+  }
+
+  @Post()
+  create(@Request() req, @Body() body) {
+    return this.posts.create(body, req.user);
   }
 }

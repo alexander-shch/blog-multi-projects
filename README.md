@@ -25,14 +25,15 @@ WIP: need to learn some more basics of how ruby and rails work behind the scenes
 Need to understand better how sessions are being handled and controllers in global
 
 ## Node (NestJS) - WIP
-- Swagger - Installed
+Swagger - Installed
 - Need to add schemas (Currently set only on login)
-- - DB handled with typeorm and pg - Posts and users creation and fetching works with relations
-- - Still need to add more logic for update and delete
-- Auth - Works
-- - Not sure if to init user entity and pass it as a class into the request or leave as is? Will benefit for dataSource and db create docs but that's it
-- - All end points are behind auth 
-- - Special IsPublic decorator was created as only a small sum are open API calls for example login / register
+    - DB handled with typeorm and pg - Posts and users creation and fetching works with relations
+    - Still need to add more logic for update and delete
+
+Auth - Works
+- Not sure if to init user entity and pass it as a class into the request or leave as is? Will benefit for dataSource and db craete docs but that's it
+- All end points are behind auth 
+- Special IsPublic decorator was created as only a small sum are open API calls for example login / register
 
 ## GoLang - To be done
 

@@ -2,11 +2,11 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 1
-  host: db
+  host: <%= ENV['DB_PATH'] || 'localhost' %>
   username: postgres
   password: postgres
   database: postgres
-  port: 5432
+  port: <%= ENV['DB_PORT'] || 5555 %>
 
 development:
   <<: *default

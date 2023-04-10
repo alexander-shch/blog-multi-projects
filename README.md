@@ -1,3 +1,8 @@
+This is a free to use code, do what ever you want with it there are no licenses or requirement to contact me about it.
+It's just a personal repo that I use to train code and learn new things.
+Open to any one to take a look.
+
+
 # blog-multi-projects
 This repo represents different stacks for the same purpose, mainly for practicing
 
@@ -18,7 +23,7 @@ Need to understand better how sessions are being handled and controllers in glob
 - - DB handled with typeorm and pg - Posts and users creation and fetching works with relations
 - - Still need to add more logic for update and delete
 - Auth - Works
-- - Not sure if to init user entity and pass it as a class into the request or leave as is? Will benefit for dataSource and db craete docs but that's it
+- - Not sure if to init user entity and pass it as a class into the request or leave as is? Will benefit for dataSource and db create docs but that's it
 - - All end points are behind auth 
 - - Special IsPublic decorator was created as only a small sum are open API calls for example login / register
 

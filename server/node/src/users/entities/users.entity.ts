@@ -1,11 +1,18 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Post } from 'src/posts/entities/post.entity';
+import {
+  Column,
+  Entity,
+  JoinTable,
+  OneToMany,
+  PrimaryGeneratedColumn,
+} from 'typeorm';
 
 @Entity()
 export class User {
   @ApiProperty({ example: 1, description: 'User ID' })
   @PrimaryGeneratedColumn()
-  userId: number;
+  id: number;
 
   @ApiProperty({})
   @Column()
@@ -20,4 +27,8 @@ export class User {
   @ApiProperty({})
   @Column()
   password?: string;
+
+  @OneToMany(() => Post, (post) => post.user)
+  @JoinTable()
+  posts: Post[];
 }

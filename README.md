@@ -1,7 +1,10 @@
 # blog-multi-projects
 This repo represents different stacks for the same purpose, mainly for practicing
 
-#. Server
+All of the apps BE and FE will be working working with docker compose (The file is in the root of the project)
+Right now being used mainly to initiate a DB
+
+# Server
 
 ## Ruby with rails - WIP
 ***Why is it soooo dificult to setup? Spent hours on small little issues that could have easily be resolved with a little more docs / script***

@@ -1,30 +1,50 @@
-import { Injectable } from '@nestjs/common';
+import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
+import { ApplyEntityFields } from 'src/utils/db';
+import { DataSource, Repository } from 'typeorm';
 
-export interface User {
-  userId: number;
-  name: string;
-  email: string;
-  password?: string;
-}
+import { User } from './entities/users.entity';
 
 @Injectable()
 export class UsersService {
-  private readonly users: User[] = [
-    {
-      userId: 1,
-      name: 'john',
-      email: 'john@test.com',
-      password: '1234',
-    },
-    {
-      userId: 2,
-      name: 'maria',
-      email: 'maria@test.com',
-      password: '12345',
-    },
-  ];
+  constructor(
+    @InjectRepository(User) private userRepo: Repository<User>,
+    private dataSource: DataSource,
+  ) {}
 
-  async findOne(name: string): Promise<User | undefined> {
-    return this.users.find((user) => user.name === name);
+  async findAll() {
+    return this.userRepo.find();
+  }
+
+  async create(userObj: Pick<User, 'email' | 'name' | 'password'>) {
+    let error: any;
+    let res: User;
+
+    const ins = ApplyEntityFields(new User(), userObj);
+
+    const qr = this.dataSource.createQueryRunner();
+
+    await qr.connect();
+    await qr.startTransaction();
+
+    try {
+      res = await qr.manager.save(ins);
+      await qr.commitTransaction();
+    } catch (e) {
+      error = e;
+      await qr.rollbackTransaction();
+    } finally {
+      await qr.release();
+    }
+
+    if (!!error) {
+      throw new HttpException(error.detail, HttpStatus.BAD_REQUEST);
+    }
+
+    return res;
+  }
+
+  async findOne(email: string): Promise<User | undefined> {
+    return this.userRepo.findOne({ where: { email } });
   }
 }

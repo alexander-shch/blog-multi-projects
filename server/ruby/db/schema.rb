@@ -14,17 +14,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_07_085356) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "posts", force: :cascade do |t|
+  create_table "post", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.string "title"
     t.text "content"
     t.string "perex"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_posts_on_user_id"
+    t.index ["user_id"], name: "index_post_on_user_id"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "user", force: :cascade do |t|
     t.string "name"
     t.string "last_name"
     t.string "email"
@@ -33,5 +33,5 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_07_085356) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "posts", "users"
+  add_foreign_key "post", "user"
 end

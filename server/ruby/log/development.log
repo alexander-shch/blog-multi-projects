@@ -7819,3 +7819,580 @@ Processing by GraphqlController#execute as */*
 Completed 200 OK in 56ms (Views: 0.4ms | ActiveRecord: 25.4ms | Allocations: 9639)
 
 
+Started GET "/graphiql" for 127.0.0.1 at 2023-04-10 19:29:49 +0200
+  
+ActiveRecord::NoDatabaseError (We could not find your database: postgres. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-04-10 19:29:49 +0200
+  
+ActiveRecord::NoDatabaseError (We could not find your database: postgres. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/graphiql" for 127.0.0.1 at 2023-04-10 19:30:46 +0200
+  
+ActiveRecord::NoDatabaseError (We could not find your database: postgres. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-04-10 19:30:47 +0200
+  
+ActiveRecord::NoDatabaseError (We could not find your database: postgres. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/graphiql" for 127.0.0.1 at 2023-04-10 19:30:59 +0200
+  
+ActiveRecord::NoDatabaseError (We could not find your database: postgres. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-04-10 19:30:59 +0200
+  
+ActiveRecord::NoDatabaseError (We could not find your database: postgres. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2023-04-10 19:36:24 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/lib/ruby/gems/3.2.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/lib/ruby/gems/3.2.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.7ms | Allocations: 489)
+Completed 200 OK in 12ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 3322)
+
+
+Started GET "/" for ::1 at 2023-04-10 19:36:29 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/lib/ruby/gems/3.2.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/lib/ruby/gems/3.2.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 272)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 805)
+
+
+Started GET "/graphiql" for ::1 at 2023-04-10 19:36:32 +0200
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"graphql#"}
+  Rendering /Users/alexanderscherbakov/.gem/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/alexanderscherbakov/.gem/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 62.0ms | Allocations: 13490)
+Completed 200 OK in 64ms (Views: 63.5ms | ActiveRecord: 0.0ms | Allocations: 14325)
+
+
+Started GET "/assets/graphiql/rails/application-de6fa9ce6a43852290498772ee60ab5b8e1820ee1b1c782a8d5cdb7ab50fc419.css" for ::1 at 2023-04-10 19:36:33 +0200
+Started GET "/assets/graphiql/rails/application-3b763aac20460e19a247660540dafda562ff7f06786362de149704e6d280f825.js" for ::1 at 2023-04-10 19:36:33 +0200
+Started POST "/graphql" for ::1 at 2023-04-10 19:36:33 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery"}}
+uninitialized constant Mutation
+/Users/alexanderscherbakov/Documents/projects/bloggin/server/ruby/app/graphql/mutations/create_post.rb:1:in `<main>'
+<internal:/usr/local/Cellar/ruby/3.2.2/lib/ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:37:in `require'
+<internal:/usr/local/Cellar/ruby/3.2.2/lib/ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:37:in `require'
+/Users/alexanderscherbakov/.gem/gems/bootsnap-1.16.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+/usr/local/lib/ruby/gems/3.2.0/gems/zeitwerk-2.6.7/lib/zeitwerk/kernel.rb:30:in `require'
+/Users/alexanderscherbakov/Documents/projects/bloggin/server/ruby/app/graphql/types/mutation_type.rb:3:in `<class:MutationType>'
+/Users/alexanderscherbakov/Documents/projects/bloggin/server/ruby/app/graphql/types/mutation_type.rb:2:in `<module:Types>'
+/Users/alexanderscherbakov/Documents/projects/bloggin/server/ruby/app/graphql/types/mutation_type.rb:1:in `<main>'
+<internal:/usr/local/Cellar/ruby/3.2.2/lib/ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:37:in `require'
+<internal:/usr/local/Cellar/ruby/3.2.2/lib/ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:37:in `require'
+/Users/alexanderscherbakov/.gem/gems/bootsnap-1.16.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+/usr/local/lib/ruby/gems/3.2.0/gems/zeitwerk-2.6.7/lib/zeitwerk/kernel.rb:30:in `require'
+/Users/alexanderscherbakov/Documents/projects/bloggin/server/ruby/app/graphql/ruby_schema.rb:2:in `<class:RubySchema>'
+/Users/alexanderscherbakov/Documents/projects/bloggin/server/ruby/app/graphql/ruby_schema.rb:1:in `<main>'
+<internal:/usr/local/Cellar/ruby/3.2.2/lib/ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:37:in `require'
+<internal:/usr/local/Cellar/ruby/3.2.2/lib/ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:37:in `require'
+/Users/alexanderscherbakov/.gem/gems/bootsnap-1.16.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+/usr/local/lib/ruby/gems/3.2.0/gems/zeitwerk-2.6.7/lib/zeitwerk/kernel.rb:30:in `require'
+/Users/alexanderscherbakov/Documents/projects/bloggin/server/ruby/app/controllers/graphql_controller.rb:15:in `execute'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/abstract_controller/base.rb:215:in `process_action'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_controller/metal/rendering.rb:53:in `process_action'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+/usr/local/lib/ruby/gems/3.2.0/gems/activesupport-7.0.4.3/lib/active_support/callbacks.rb:99:in `run_callbacks'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/abstract_controller/callbacks.rb:233:in `process_action'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+/usr/local/lib/ruby/gems/3.2.0/gems/activesupport-7.0.4.3/lib/active_support/notifications.rb:206:in `block in instrument'
+/usr/local/lib/ruby/gems/3.2.0/gems/activesupport-7.0.4.3/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/usr/local/lib/ruby/gems/3.2.0/gems/activesupport-7.0.4.3/lib/active_support/notifications.rb:206:in `instrument'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+/usr/local/lib/ruby/gems/3.2.0/gems/activerecord-7.0.4.3/lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/abstract_controller/base.rb:151:in `process'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_controller/metal.rb:188:in `dispatch'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_controller/metal.rb:251:in `dispatch'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/routing/route_set.rb:32:in `serve'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/journey/router.rb:50:in `block in serve'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/journey/router.rb:32:in `each'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/journey/router.rb:32:in `serve'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/routing/route_set.rb:852:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:266:in `context'
+/usr/local/lib/ruby/gems/3.2.0/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:260:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/cookies.rb:704:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/rack-2.2.6.4/lib/rack/etag.rb:27:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/rack-2.2.6.4/lib/rack/conditional_get.rb:40:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/rack-2.2.6.4/lib/rack/head.rb:12:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/activerecord-7.0.4.3/lib/active_record/migration.rb:603:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+/usr/local/lib/ruby/gems/3.2.0/gems/activesupport-7.0.4.3/lib/active_support/callbacks.rb:99:in `run_callbacks'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/railties-7.0.4.3/lib/rails/rack/logger.rb:40:in `call_app'
+/usr/local/lib/ruby/gems/3.2.0/gems/railties-7.0.4.3/lib/rails/rack/logger.rb:25:in `block in call'
+/usr/local/lib/ruby/gems/3.2.0/gems/activesupport-7.0.4.3/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+/usr/local/lib/ruby/gems/3.2.0/gems/activesupport-7.0.4.3/lib/active_support/tagged_logging.rb:37:in `tagged'
+/usr/local/lib/ruby/gems/3.2.0/gems/activesupport-7.0.4.3/lib/active_support/tagged_logging.rb:99:in `tagged'
+/usr/local/lib/ruby/gems/3.2.0/gems/railties-7.0.4.3/lib/rails/rack/logger.rb:25:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/rack-2.2.6.4/lib/rack/runtime.rb:22:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/activesupport-7.0.4.3/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/static.rb:23:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/rack-2.2.6.4/lib/rack/sendfile.rb:110:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/railties-7.0.4.3/lib/rails/engine.rb:530:in `call'
+/Users/alexanderscherbakov/.gem/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+/Users/alexanderscherbakov/.gem/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+/Users/alexanderscherbakov/.gem/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+/Users/alexanderscherbakov/.gem/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+/Users/alexanderscherbakov/.gem/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+/Users/alexanderscherbakov/.gem/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Completed 500 Internal Server Error in 24ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 2757)
+
+
+Started POST "/graphql" for ::1 at 2023-04-10 19:36:37 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"query {\n  user(id: 8) {\n    name\n  }\n}", "graphql"=>{"query"=>"query {\n  user(id: 8) {\n    name\n  }\n}"}}
+uninitialized constant Mutation
+/Users/alexanderscherbakov/Documents/projects/bloggin/server/ruby/app/graphql/mutations/create_post.rb:1:in `<main>'
+<internal:/usr/local/Cellar/ruby/3.2.2/lib/ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:37:in `require'
+<internal:/usr/local/Cellar/ruby/3.2.2/lib/ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:37:in `require'
+/Users/alexanderscherbakov/.gem/gems/bootsnap-1.16.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+/usr/local/lib/ruby/gems/3.2.0/gems/zeitwerk-2.6.7/lib/zeitwerk/kernel.rb:30:in `require'
+/Users/alexanderscherbakov/Documents/projects/bloggin/server/ruby/app/graphql/types/mutation_type.rb:3:in `<class:MutationType>'
+/Users/alexanderscherbakov/Documents/projects/bloggin/server/ruby/app/graphql/types/mutation_type.rb:2:in `<module:Types>'
+/Users/alexanderscherbakov/Documents/projects/bloggin/server/ruby/app/graphql/types/mutation_type.rb:1:in `<main>'
+<internal:/usr/local/Cellar/ruby/3.2.2/lib/ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:37:in `require'
+<internal:/usr/local/Cellar/ruby/3.2.2/lib/ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:37:in `require'
+/Users/alexanderscherbakov/.gem/gems/bootsnap-1.16.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+/usr/local/lib/ruby/gems/3.2.0/gems/zeitwerk-2.6.7/lib/zeitwerk/kernel.rb:30:in `require'
+/Users/alexanderscherbakov/Documents/projects/bloggin/server/ruby/app/graphql/ruby_schema.rb:2:in `<class:RubySchema>'
+/Users/alexanderscherbakov/Documents/projects/bloggin/server/ruby/app/graphql/ruby_schema.rb:1:in `<main>'
+<internal:/usr/local/Cellar/ruby/3.2.2/lib/ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:37:in `require'
+<internal:/usr/local/Cellar/ruby/3.2.2/lib/ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:37:in `require'
+/Users/alexanderscherbakov/.gem/gems/bootsnap-1.16.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+/usr/local/lib/ruby/gems/3.2.0/gems/zeitwerk-2.6.7/lib/zeitwerk/kernel.rb:30:in `require'
+/Users/alexanderscherbakov/Documents/projects/bloggin/server/ruby/app/controllers/graphql_controller.rb:15:in `execute'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/abstract_controller/base.rb:215:in `process_action'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_controller/metal/rendering.rb:53:in `process_action'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+/usr/local/lib/ruby/gems/3.2.0/gems/activesupport-7.0.4.3/lib/active_support/callbacks.rb:99:in `run_callbacks'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/abstract_controller/callbacks.rb:233:in `process_action'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+/usr/local/lib/ruby/gems/3.2.0/gems/activesupport-7.0.4.3/lib/active_support/notifications.rb:206:in `block in instrument'
+/usr/local/lib/ruby/gems/3.2.0/gems/activesupport-7.0.4.3/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/usr/local/lib/ruby/gems/3.2.0/gems/activesupport-7.0.4.3/lib/active_support/notifications.rb:206:in `instrument'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+/usr/local/lib/ruby/gems/3.2.0/gems/activerecord-7.0.4.3/lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/abstract_controller/base.rb:151:in `process'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_controller/metal.rb:188:in `dispatch'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_controller/metal.rb:251:in `dispatch'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/routing/route_set.rb:32:in `serve'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/journey/router.rb:50:in `block in serve'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/journey/router.rb:32:in `each'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/journey/router.rb:32:in `serve'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/routing/route_set.rb:852:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:266:in `context'
+/usr/local/lib/ruby/gems/3.2.0/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:260:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/cookies.rb:704:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/rack-2.2.6.4/lib/rack/etag.rb:27:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/rack-2.2.6.4/lib/rack/conditional_get.rb:40:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/rack-2.2.6.4/lib/rack/head.rb:12:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/activerecord-7.0.4.3/lib/active_record/migration.rb:603:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+/usr/local/lib/ruby/gems/3.2.0/gems/activesupport-7.0.4.3/lib/active_support/callbacks.rb:99:in `run_callbacks'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/railties-7.0.4.3/lib/rails/rack/logger.rb:40:in `call_app'
+/usr/local/lib/ruby/gems/3.2.0/gems/railties-7.0.4.3/lib/rails/rack/logger.rb:25:in `block in call'
+/usr/local/lib/ruby/gems/3.2.0/gems/activesupport-7.0.4.3/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+/usr/local/lib/ruby/gems/3.2.0/gems/activesupport-7.0.4.3/lib/active_support/tagged_logging.rb:37:in `tagged'
+/usr/local/lib/ruby/gems/3.2.0/gems/activesupport-7.0.4.3/lib/active_support/tagged_logging.rb:99:in `tagged'
+/usr/local/lib/ruby/gems/3.2.0/gems/railties-7.0.4.3/lib/rails/rack/logger.rb:25:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/rack-2.2.6.4/lib/rack/runtime.rb:22:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/activesupport-7.0.4.3/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/static.rb:23:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/rack-2.2.6.4/lib/rack/sendfile.rb:110:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+/usr/local/lib/ruby/gems/3.2.0/gems/railties-7.0.4.3/lib/rails/engine.rb:530:in `call'
+/Users/alexanderscherbakov/.gem/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+/Users/alexanderscherbakov/.gem/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+/Users/alexanderscherbakov/.gem/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+/Users/alexanderscherbakov/.gem/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+/Users/alexanderscherbakov/.gem/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+/Users/alexanderscherbakov/.gem/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Completed 500 Internal Server Error in 3ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 961)
+
+

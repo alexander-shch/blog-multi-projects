@@ -11,17 +11,20 @@ services:
       - '5555:5432'
     volumes:
       - db:/var/lib/postgresql/data
-  # bloggin:
-  #   depends_on:
-  #     - db
-  #   image: bloggin
-  #   build:
-  #     context: ./server/ruby
-  #     dockerfile: Dockerfile
-  #   ports:
-  #     - 3000:3000
-  #   links: 
-  #     - db
+
+  ruby:
+    depends_on:
+      - db
+    image: ruby
+    build:
+      context: ./server/ruby
+      dockerfile: Dockerfile
+    env_file:
+      - ./server/ruby/.docker_env
+    ports:
+      - 3500:3500
+    links:
+      - db
 
 volumes:
   db:

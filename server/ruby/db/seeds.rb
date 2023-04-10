@@ -6,7 +6,14 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+user = User.find(id: 1)
+
+if unless user
+    return
+end
+
 user = User.create(
+    id: 1
     name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
     email: "test@gmail.com",
